@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <Button
+        android:id="@+id/buttonContactPhone"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="98dp"
+        android:drawableLeft="@mipmap/ic_phone"
+        android:text="Contactame"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonCamara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEmailMe" />
+
+    <Button
+        android:id="@+id/buttonEmailMe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:drawableLeft="@mipmap/ic_email3"
+        android:text="Escribeme"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContactPhone"
+        app:layout_constraintEnd_toEndOf="@+id/buttonContactPhone"
+        app:layout_constraintStart_toStartOf="@+id/buttonContactPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextWeb" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPhone"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="98dp"
+        android:ems="10"
+        android:hint="ingresar numero de telefono"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextWeb"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonWeb"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonEmailMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextWeb"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonPhone"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <EditText
+        android:id="@+id/editTextTextWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="111dp"
+        android:ems="10"
+        android:hint="Ingresa url"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEmailMe"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonWeb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCamara"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContactPhone"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
